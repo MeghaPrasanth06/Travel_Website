@@ -4,37 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travelbuddy - Home</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <title>Home</title>
+    
    
     <style>
-        /* Add your CSS styles here */
+       
         body {
-            margin: 0;
-            padding: 0;
             font-family: 'Varela Round', sans-serif;
             
+        }
+    
+        
+        video {
+            position: fixed;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            background-size: cover;
         }
         .container {
             max-width: 500px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 40px;
         }
-        .hero {
+        
+        .container h1{
             text-align: center;
-            padding: 100px 0;
-            
-        }
-        .hero h1 {
             font-size: 48px;
-            margin-bottom: 20px;
+            color: white;
         }
-        .hero p {
+        
+        .container p {
+            text-align: center;
             font-size: 24px;
-            margin-bottom: 40px;
+            color: white; 
         }
         .cta {
             text-align: center;
@@ -58,32 +65,28 @@
 
 
 <body>
-    <div id="video-container">
+    
         <video autoplay loop muted>
-            <source src="C:\Users\megha\Downloads\WhatsApp Video 2024-05-02 at 5.55.33 PM.mp4" type="video/mp4">
-            <!-- Add alternative video formats if needed -->
-            Your browser does not support the video tag.
+            <source src="https://cdn.pixabay.com/video/2019/04/23/23011-332483109_tiny.mp4" type="video/mp4">
+            
         </video>
-    </div>
-
-    <div class="container">
-        <div class="hero">
-            <h1>Welcome to WanderLust India</h1>
-            <p>Your ultimate travel companion</p>
-            <div class="cta">
-                <a href="Book now.html"><button id="bookNow">Book Now</button></a>
-            </div>
+        <div class="container">
+          
+                <h1>Welcome to WanderLust India</h1>
+                <p>Your ultimate travel companion</p>
+                <div class="cta">
+                    <button id="bookNow">Book Now</button>
+                </div>
+        
         </div>
-    </div>
+
 
     <script>
         // Add an event listener to the "Book Now" button
         document.getElementById("bookNow").addEventListener("click", function() {
             // Navigate to the booknow.html page
-            window.location.href = "book.html";
+            window.location.href = "booknow1.html";
         });
     </script>
-</body>
-</html>
 </body>
 </html>
