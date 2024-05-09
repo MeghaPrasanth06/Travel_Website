@@ -4,50 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <title>WanderLust India</title>
+    
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
 
+   
+    <style>
+        
+
+        header {
+            padding: 10px 20px; /* Adjust padding for navbar */
+            text-align: right; /* Align text to the right */
+        }
+        .navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar li {
+            display: inline;
+            margin: 0 10px; /* Adjust margin for navbar items */
+        }
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif; /* Apply default font to navbar */
+            font-size: 22px; /* Set font size */
+        }
+        .glass {
+            position: static; /* Change position to static */
+            border-radius: 10px;
+            padding: 20px; /* Add padding for spacing */
+            margin: 20px; /* Add margin for spacing */
+            text-align: right; /* Align text to the right */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .glass h1 {
+            font-family: 'Tangerine';
+            color: white; /* Change font color */
+            margin-bottom: 10px;
+            font-size: 100px; /* Increase font size */
+        }
+        .sub {
+            font-size: 30px;
+            color: white; /* Change font color */
+            text-align: right; /* Align text to the right */
+        }
+        #but {
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            background-color: #333;
+            color: white;
+        }
+        #but:hover {
+            background-color: #555;
+        }
+        video {
+            position: fixed;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            background-size: cover;
+        }
+    </style>
 </head>
 <body>
 
     <header>
-            <nav class = "nav">
-                
-                <ul class = "navbar">
-                    <li><a href="Index.html">Home</a></li>
-                    
-                    <li><a href="About.html">About</a></li>
-                    <li><a href="Explore.html">Explore</a></li>
-                    <li><a href="Sign Up.html">Sign up</a></li>
-                   
-                    <li><button id="lo"><a href="LoginReal.html">Login</button></li></a>
-                </ul>
-            </nav>
+        <nav class="nav">
+            <ul class="navbar">
+                <li><a href="index2.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="sign-up.html">Sign up</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <video src="C:\Users\megha\Downloads\WhatsApp Video 2024-05-01 at 10.44.10 AM.mp4" muted loop autoplay></video>
+    <video src="https://cdn.pixabay.com/video/2023/01/15/146633-789534286_tiny.mp4" autoplay loop muted></video>
+
+    <div class="glass">
+        <div class="info">
+            <h1>WanderLust India</h1>
+            <div class="sub">
+                <p>Explore the beauty of India with us</p> 
+            </div>
+        </div>
+        <a href="explore.html"><button id="but">Explore</button></a>
+    </div>
 
     
-    <div class="glass">
-    <div class="info">
-        <h1>WanderLust India</h1><br>
-        <div class="sub">
-             <p>Enjoy the best tour experiences <br>
-             travelbuddy has to offer</p> 
-        </div>
-    </div>
-
-        <a href="Explore.html"><button id="but">Explore</button></a>
-    </div>
-    <script>
-        // JavaScript to handle the click event on the "Home" link
-        document.querySelector('nav a[href="index.html"]').addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent the default behavior of the link
-            window.location.href = 'index.html'; // Navigate to the specified URL (index.html in this case)
-        });
-    </script>
 </body>
 </html>
