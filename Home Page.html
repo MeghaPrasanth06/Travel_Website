@@ -15,42 +15,39 @@
         
 
         header {
-            padding: 10px 20px; /* Adjust padding for navbar */
-            text-align: right; /* Align text to the right */
+            padding: 10px 20px;
+            text-align: right; 
         }
-        .navbar {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
+       
         .navbar li {
+            list-style-type: none;
             display: inline;
-            margin: 0 10px; /* Adjust margin for navbar items */
+            margin: 0 50px; 
         }
         .navbar li a {
             color: white;
             text-decoration: none;
-            font-family: 'Roboto', sans-serif; /* Apply default font to navbar */
-            font-size: 22px; /* Set font size */
+            font-family: 'Roboto', sans-serif; 
+            font-size:25px;
         }
         .glass {
-            position: static; /* Change position to static */
-            border-radius: 10px;
-            padding: 20px; /* Add padding for spacing */
-            margin: 20px; /* Add margin for spacing */
-            text-align: right; /* Align text to the right */
+            position:static; 
+            border-radius: 50px;
+            padding: 20px; 
+            margin: 20px; 
+            text-align: right; 
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .glass h1 {
             font-family: 'Tangerine';
-            color: white; /* Change font color */
+            color: white; 
             margin-bottom: 10px;
-            font-size: 100px; /* Increase font size */
+            font-size: 100px; 
         }
-        .sub {
+        .glass p {
             font-size: 30px;
-            color: white; /* Change font color */
-            text-align: right; /* Align text to the right */
+            color: white; 
+            text-align: right; 
         }
         #but {
             border: none;
@@ -65,6 +62,15 @@
         #but:hover {
             background-color: #555;
         }
+        #button1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    background-color: transparent; 
+    border: none;
+    color:white;
+
+}
+
         video {
             position: fixed;
             z-index: -1;
@@ -77,14 +83,30 @@
             background-size: cover;
         }
     </style>
+
+    <script>
+        
+        function explore()
+        {
+           document.getElementById("but").innerHTML='<a href="explore1.html">Explore</a>';
+        }
+        
+        function home() {
+    window.alert('This page opens in a new tab');
+    window.open('index2.html', '_blank');
+}
+
+
+    </script>
 </head>
 <body>
 
     <header>
-        <nav class="nav">
+       <nav>
             <ul class="navbar">
-                <li><a href="index2.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><button id="button1" onclick="home()">Home</button></li>
+
+                <li><a href="about.html" >About</a></li>
                 <li><a href="explore.html">Explore</a></li>
                 <li><a href="sign-up.html">Sign up</a></li>
                 <li><a href="login.html">Login</a></li>
@@ -95,13 +117,13 @@
     <video src="https://cdn.pixabay.com/video/2023/01/15/146633-789534286_tiny.mp4" autoplay loop muted></video>
 
     <div class="glass">
-        <div class="info">
+        
             <h1>WanderLust India</h1>
-            <div class="sub">
+            
                 <p>Explore the beauty of India with us</p> 
-            </div>
-        </div>
-        <a href="explore.html"><button id="but">Explore</button></a>
+            
+        
+       <button id="but" onclick="explore()">Explore</button></a>
     </div>
 
     
