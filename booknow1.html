@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Book Now</title>
+    
+    
+    <style>
+    body {
+   
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden; /* Hide overflow to prevent scrollbar */
+}
+
+video {
+    
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    background-size: cover;
+}
+
+
+    
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.booking-form {
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+    border-radius: 10px; /* Added border radius for rounded corners */
+    padding: 40px; /* Adjusted padding */
+    width: 75%; /* Set width */
+}
+
+.booking-form h1 {
+    font-size: 36px; /* Decreased font size for better fit */
+    margin-bottom: 20px;
+}
+
+.booking-form p {
+    font-size: 18px; /* Decreased font size for better fit */
+    margin-bottom: 30px; /* Adjusted margin */
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 16px; /* Decreased font size for better fit */
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea {
+    width: calc(100% - 22px); /* Adjusted width to fit inside the container */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+.submit-btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.submit-btn button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn button:hover {
+    background-color: #555;
+}
+
+
+
+    </style>
+</head>
+<body>
+   
+        <video autoplay loop muted>
+            <source src="https://cdn.pixabay.com/video/2020/03/30/34608-402679728_tiny.mp4" type="video/mp4">
+            <!-- Add alternative video formats if needed -->
+            Your browser does not support the video tag.
+        </video>
+       
+            <div class="container">
+                <div class="booking-form">
+                    <h1>Book Your Trip Now</h1>
+                    <p>Fill out the form below to check if dates are available </p>
+                    <form action="#" method="POST">
+                        
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required>
+                            
+                            
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                           
+                            
+                                <label for="destination">Destination</label>
+                                <select id="destination" name="destination" required>
+                                    <option value="">Select Destination</option>
+                                    <option value="jammu">Jammu and Kashmir</option>
+                                    <option value="Jaipur">Jaipur</option>
+                                    <option value="Manali">Manali</option>
+                                    <option value="Megalaya">Megalaya</option>
+                                    <option value="lonavala">lonavala</option>
+                                    <option value="hampi">Hampi</option>
+                                    <option value="Assam">Assam</option>
+                                    <option value="goa">Goa</option>
+                                    <option value="Lakhshadweep">Lakhshadweep</option>
+                                </select>
+                            
+                                <label for="date">Date</label>
+                                <input type="date" id="date" name="date" required>
+                            
+                    
+                            
+                                <label for="message">Message (Optional)</label>
+                                <textarea id="message" name="message" rows="5"></textarea>
+                            </div>
+                            <div class="submit-btn">
+                                <button type="submit">Submit</button>
+                            </div>
+                        </form>
+                        
+                       
+                </div>
+            </div>
+    
+                
+                
+
+            
+               
+                
