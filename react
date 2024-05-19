@@ -1,0 +1,17 @@
+import React from 'react';
+import './App.css';
+import Header from './Header';
+import VideoBackground from './VideoBackground';
+import GlassPane from './GlassPane';
+
+function App() {
+  return (
+    <div className="App">
+      <Header />
+      <VideoBackground />
+      <GlassPane />
+    </div>
+  );
+}
+
+export default App;
